@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: black;
+}
+
+#root {
+    padding: 2rem;
+}
+
+.grid {
+    width: 46rem;
+    max-width: 46rem;
+    margin: auto;
+}
+
+.cell {
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+}
+
+.cell:hover {
+    /* background-color: rgb(15, 15, 15); */
+    opacity: .8;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.score {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: center;
+    width: 28rem;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.score div {
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid {
+        width: 22rem;
+        max-width: 22rem;
+        margin: auto;
+    }
+    .cell {
+        width: 7rem;
+        height: 7rem;
+        display: inline-block;
+    }
+    .score {
+        display: flex;
+        flex-direction: row;
+        flex-flow: center;
+        width: 24rem;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .score div {
+        padding: 1rem;
+        color: white;
+        font-size: 1.6rem;
+        margin: .1rem;
+    }
+}
+
+.top {
+    border-bottom: .3rem solid blanchedalmond;
+}
+
+.bottom {
+    border-top: .3rem solid blanchedalmond;
+}
+
+.left {
+    border-right: .3rem solid blanchedalmond;
+}
+
+.right {
+    border-left: .3rem solid blanchedalmond;
+}
+
+.player1 {
+    background-color: blue;
+}
+
+.player2 {
+    background-color: red;
+}
+
+div.player1-score {
+    color: blue;
+}
+
+div.player2-score {
+    color: red;
+}
