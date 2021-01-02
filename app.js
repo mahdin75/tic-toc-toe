@@ -152,6 +152,11 @@ class App extends Component {
     }
 
     resetGrid() {
+        var cellElements = document.body.querySelectorAll(".cell");
+        for (var i = 0; i < cellElements.length; i++) {
+            cellElements[i].setAttribute("onclick", null);
+        }
+
         window.setTimeout(() => {
             this.state.cells = {
                 "left-top": "free",
